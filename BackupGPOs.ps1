@@ -14,8 +14,8 @@
     -Comment "Weekly GPO Backup"
 
 .PARAMETER FilePath
-    Set backup filepath value; default value [\\kwaja701\Information_Services\Enterprise_Services\GPO Backup].
-    -FilePath "\\Server01\Information_Services\Enterprise_Services\GPO Backup" 
+    Set backup filepath value; default value [\\server01\Enterprise_Services\GPO Backup].
+    -FilePath "\\Server01\Enterprise_Services\GPO Backup" 
     
 .PARAMETER GPO
     Set specific GPO displayname to backup; if GPO isn't set, default is all GPO's.
@@ -31,7 +31,7 @@
 
 .EXAMPLE
     .\Script.ps1 -Domain acme.com -Comment "Weekly GPO Backup" -FilePath '\\Server01\Weekly Backups'
-    Connects to kwajalein-school.com domain; begins backup of all GPOs to $FilePath (default); changes comment to "Weekly GPO Backup"; 
+    Connects to acme.com domain; begins backup of all GPOs to $FilePath (default); changes comment to "Weekly GPO Backup"; 
     changes backup filepath to \\Server01\Weekly Backups.
 
 .EXAMPLE
