@@ -36,7 +36,7 @@
 
 .EXAMPLE
     .\Script.ps1 -GPO "PowerShell Policy" -FolderName TestFolder
-    Connects to kwajalein-school.com domain; backup [PowerShell Policy] object to [\\server01\Enterprise_Services\GPO Backup\TestFolder].
+    Connects to acme.com domain; backup [PowerShell Policy] object to [\\server01\Enterprise_Services\GPO Backup\TestFolder].
     
 .NOTES
     Written by JBear 6/14/17	
@@ -51,7 +51,7 @@ param(
     [String]$Comment = 'Monthly Group Policy Backup',
 
     [Parameter(ValueFromPipeline=$true)]
-    [String]$FilePath = '\\kwaja701\Information_Services\Enterprise_Services\GPO Backup',
+    [String]$FilePath = '\\server01\Enterprise_Services\GPO Backup',
 
     [Parameter(ValueFromPipeline=$true)]
     [String[]]$GPO,
