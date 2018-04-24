@@ -6,7 +6,7 @@
     Executes Group Policy backup commands. Saves backups to specified Filepath.
 
 .PARAMETER Domain
-    Set domain value; default value [smdck.smdc.army.mil].
+    Set domain value; default value [acme.com].
     -Domain contoso.acme.com
 
 .PARAMETER Comment
