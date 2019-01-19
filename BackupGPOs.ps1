@@ -60,7 +60,7 @@ param(
     [String]$FolderName = (Get-Date -Format yyyyMMdd),
 
     #New directory by date
-    $LogPath = $FilePath + "\" + $FolderName,
+    $LogPath = "$($FilePath)\$($FolderName)",
 
     #Backup log path
     $PolicyLog = "$LogPath\PolicyBackupLog.txt"
